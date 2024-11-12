@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+@font-face {
+    font-family: titulo;
+    src: url(./retro_vintage/RetroVintage-Regular.otf);
+}
+
+body{
+    background-color: #edf5fc;
+    color: #2a3138;
+    transition: background-color 0.5s ease-in-out, color 0.5s;
+}
+
+header{
+    background-color: #596572;
+    color: #a7adb3;
+    padding: 20px;
+    text-align: center; 
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+h1, h2{
+    font-family: titulo;
+}
+
+h1:hover{
+    font-size: 2.8rem;
+    color: white;
+}
+
+h1{
+    font-size: 2.7rem;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+h2:hover{
+    font-size: 2.4rem;
+    color: rgb(1, 3, 14);
+}
+
+header button{
+    border-radius: 75px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold; 
+}
+
+section{
+    padding: 20px;
+    margin: 20px auto;
+    height: 100vh;
+   
+}
+
+div{
+    width: 50%;
+}
+
+img{
+    height: 400px;
+    border-radius: 35px;
+    border: solid  #62778b;
+}
+
+h3{
+    color: #103a68;
+}
+#sobre{
+    display: flex;
+    justify-content: space-around;
+}
+#sobre p{
+    padding: 15px;
+}
+
+#sobre h2{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+#projetos{
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.projeto{
+    background-color: #8ea1b4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 50%;
+    color: #2b3844;
+    text-align: center;
+}
+
+
+p a{
+    text-decoration: none;
+    color: #2b3844;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+p a:hover{
+    text-decoration:dashed;
+    color:  #d6ebff;
+    font-size: 19px;
+    font-style: oblique;
+
+}
+
+
+
+/* footer{
+    height: 35px;
+    background-color: #596572;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+footer p{
+    padding: 20px;
+} */
+
+/* ----------Modo Escuro------------ */
+
+.dark-theme{
+    background-color: #161b20;
+    color: #edf5fc;
+}
+.dark-theme p a:hover{
+    text-decoration:dashed;
+    color:  #feffff;
+    font-size: 19px;
+    font-style: oblique;
+}
+
+.dark-theme h2:hover{
+    font-size: 2.4rem;
+    color: #dfe3ff;
+}
+.dark-theme h3{
+    color: hsl(214, 100%, 95%);
+}
+.dark-theme p a{
+    text-decoration: none;
+    color: #73889b;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: 600;
+}
+.dark-theme header{
+    background-color: #06090c;
+    color: #b2c5d8;
+}
+.dark-theme #sobre{
+    background-color: #161b20;
+}
+
+.dark-theme #sobre p{
+    color: #838d99;
+}
+
+.dark-theme img{
+    border: none;
+}
+.dark-theme h2{
+    color: #92979c;
+
+}
+
+.dark-theme header button{
+    background-color:  #14212e;
+    color: #e6ebff;
+}
+
+.dark-theme .projeto{
+    background-color: #18222c;
+    color: #b6c4d1;
+    border: none;
+}
+
+
+/* ---------Responsividade---------- */
+
+@media (max-width: 320px){
+    img{
+        height: 250px;
+        margin: 10px;
+    }
+
+    #sobre{
+        display: block;
+        text-align: center;
+        justify-items: center;
+      
+    }
+
+    p{
+        text-align: justify;
+        font-size: 18px;
+        margin: 5px;
+        margin-bottom: 10%;
+    }
+    div{
+        width: 100%;
+    }
+
+    .projeto{
+        background-color: #8ea1b4;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        width: 100%;
+        color: #2b3844;
+    }
+    h1, h2{
+        font-family: titulo;
+    }
+    
+    h1{
+        font-size: 1.8rem;
+    }
+    
+    h2{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    button{
+        border-radius: 75px;
+        margin-top: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        background-color: #fff;
+        color: #333;
+        font-weight: bold; 
+    }
+
+    p{
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+}
+
+@media (max-width: 430px){
+    img{
+        height: 300px;
+     
+    }
+
+    #sobre{
+        display: block;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    p{
+        text-align: justify;
+        font-size: 20px;
+        margin: 5px;
+        margin-bottom: 10%;
+    }
+    div{
+        width: 100%;
+    }
+
+    .projeto{
+        background-color: #8ea1b4;
+        padding: 15px;
+        margin-bottom: 35px;
+        border-radius: 10px;
+        width: 100%;
+        color: #2b3844;
+        border: solid  #455361;
+        
+    }
+  
+
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    button{
+        border-radius: 75px;
+        margin-top: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        background-color: #fff;
+        color: #333;
+        font-weight: bold; 
+    }
+
+    p{
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+}
